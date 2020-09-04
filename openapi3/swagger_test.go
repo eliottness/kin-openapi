@@ -6,7 +6,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/getkin/kin-openapi/openapi3"
+	"github.com/eliottness/kin-openapi/openapi3"
 	"github.com/ghodss/yaml"
 	"github.com/stretchr/testify/require"
 )

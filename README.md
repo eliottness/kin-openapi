@@ -1,6 +1,6 @@
-[![CI](https://github.com/getkin/kin-openapi/workflows/go/badge.svg)](https://github.com/getkin/kin-openapi/actions)
-[![Go Report Card](https://goreportcard.com/badge/github.com/getkin/kin-openapi)](https://goreportcard.com/report/github.com/getkin/kin-openapi)
-[![GoDoc](https://godoc.org/github.com/getkin/kin-openapi?status.svg)](https://godoc.org/github.com/getkin/kin-openapi)
+[![CI](https://github.com/eliottness/kin-openapi/workflows/go/badge.svg)](https://github.com/eliottness/kin-openapi/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/eliottness/kin-openapi)](https://goreportcard.com/report/github.com/eliottness/kin-openapi)
+[![GoDoc](https://godoc.org/github.com/eliottness/kin-openapi?status.svg)](https://godoc.org/github.com/eliottness/kin-openapi)
 [![Join Gitter Chat Channel -](https://badges.gitter.im/getkin/kin.svg)](https://gitter.im/getkin/kin?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 # Introduction
@@ -17,7 +17,7 @@ Here's some projects that depend on _kin-openapi_:
   * [github.com/deepmap/oapi-codegen](https://github.com/deepmap/oapi-codegen) - Generate Go server boilerplate from an OpenAPI 3 spec
   * [github.com/dunglas/vulcain](https://github.com/dunglas/vulcain) - "Use HTTP/2 Server Push to create fast and idiomatic client-driven REST APIs"
   * [github.com/danielgtaylor/restish](https://github.com/danielgtaylor/restish) - "...a CLI for interacting with REST-ish HTTP APIs with some nice features built-in"
-  * (Feel free to add your project by [creating an issue](https://github.com/getkin/kin-openapi/issues/new) or a pull request)
+  * (Feel free to add your project by [creating an issue](https://github.com/eliottness/kin-openapi/issues/new) or a pull request)
 
 ## Alternative projects
   * [go-openapi](https://github.com/go-openapi)
@@ -25,17 +25,17 @@ Here's some projects that depend on _kin-openapi_:
   * See [this list](https://github.com/OAI/OpenAPI-Specification/blob/OpenAPI.next/IMPLEMENTATIONS.md).
 
 # Structure
-  * _openapi2_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi2))
+  * _openapi2_ ([godoc](https://godoc.org/github.com/eliottness/kin-openapi/openapi2))
     * Support for OpenAPI 2 files, including serialization, deserialization, and validation.
-  * _openapi2conv_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi2conv))
+  * _openapi2conv_ ([godoc](https://godoc.org/github.com/eliottness/kin-openapi/openapi2conv))
     * Converts OpenAPI 2 files into OpenAPI 3 files.
-  * _openapi3_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi3))
+  * _openapi3_ ([godoc](https://godoc.org/github.com/eliottness/kin-openapi/openapi3))
     * Support for OpenAPI 3 files, including serialization, deserialization, and validation.
-  * _openapi3filter_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi3filter))
+  * _openapi3filter_ ([godoc](https://godoc.org/github.com/eliottness/kin-openapi/openapi3filter))
     * Validates HTTP requests and responses
-  * _openapi3gen_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/openapi3gen))
+  * _openapi3gen_ ([godoc](https://godoc.org/github.com/eliottness/kin-openapi/openapi3gen))
     * Generates `*openapi3.Schema` values for Go types.
-  * _pathpattern_ ([godoc](https://godoc.org/github.com/getkin/kin-openapi/pathpattern))
+  * _pathpattern_ ([godoc](https://godoc.org/github.com/eliottness/kin-openapi/pathpattern))
     * Matches strings with OpenAPI path patterns ("/path/{parameter}")
 
 # Some recipes
@@ -73,7 +73,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/getkin/kin-openapi/openapi3filter"
+	"github.com/eliottness/kin-openapi/openapi3filter"
 )
 
 func main() {
